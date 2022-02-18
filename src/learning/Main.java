@@ -20,7 +20,15 @@ public class Main {
 
     public static void main(String[] args) {
         int[] array = {4, 5, 2, 3, 1};
-//        insertionSort(array);
-        System.out.println(Arrays.toString(insertionSort(array)));
+        insertionSort(array);
+
+        Person truePerson = new Person("Olha", 38, 12000);
+        Person badPerson = new Person("Mazai", 19, -10);
+        Person splinter = new Person("Marina", 29, 0);
+
+        truePerson.checkMood("Good mood");
+        badPerson.checkMood("Romantic mood");
+        splinter.checkMood("Neutral mood");
+
     }
 }
