@@ -30,5 +30,7 @@ public class Main {
         badPerson.checkMood("Romantic mood");
         splinter.checkMood("Neutral mood");
 
+
     }
+
 }
