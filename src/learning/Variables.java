@@ -8,6 +8,8 @@ public class Variables {
         String book = "Thing";
         boolean input = true;
         System.out.println(result);
+        age = 4;
+        System.out.println(age);
 
     }
 }
