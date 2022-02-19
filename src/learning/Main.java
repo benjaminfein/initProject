@@ -1,7 +1,5 @@
 package learning;
 
-import java.util.Arrays;
-
 public class Main {
     public static int[] insertionSort(int[] array) {
         for (int i = 1; i < array.length; i++) {
@@ -29,7 +27,6 @@ public class Main {
         truePerson.checkMood("Good mood");
         badPerson.checkMood("Romantic mood");
         splinter.checkMood("Neutral mood");
-
 
     }
 
