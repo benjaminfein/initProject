@@ -6,9 +6,9 @@ public class IfElseOperators {
         Scanner console = new Scanner(System.in);
         System.out.println("Unnamed ship, please enter your name : ");
         String nameOfShip = console.nextLine();
-        System.out.println("Ok, " + nameOfShip + ", now please enter your tonnage(form 1 to 100) and we will count your size by world standart : ");
+        System.out.println("Ok, " + nameOfShip + ", now please enter your tonnage(from 1 to 100) and we will count your size by world standart : ");
         int tonnage = console.nextInt();
-        int size;
+        int size = 0;
         if(tonnage >= 1 && tonnage <=10)
             size = 1;
         else{
@@ -40,6 +40,7 @@ public class IfElseOperators {
                                                 size = 10;
                                             else{
                                                 System.out.println("Please, try again(You enter incorrect tonnage)");
+
                                             }
                                         }
                                     }
