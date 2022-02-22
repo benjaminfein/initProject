@@ -1,5 +1,11 @@
 package learning;
 
+import learning.friendship.FriendshipService;
+import learning.friendship.Person;
+import learning.inheritance.Developer;
+import learning.inheritance.Manager;
+import learning.inheritance.Tester;
+
 public class Main {
 //    public static int[] insertionSort(int[] array) {
 //        for (int i = 1; i < array.length; i++) {
@@ -16,23 +22,23 @@ public class Main {
 //        return array;
 //    }
 //
-//    public static void main(String[] args) {
-//        Person truePerson = new Person("Olha", 38, 12000);
-//        Person badPerson = new Person("Mazai", 19, -10);
-//        Person splinter = new Person("Marina", 29, 0);
-//
-//        FriendshipService service = new FriendshipService();
-//        service.checkFriendByName(splinter, "Kateryna");
-//    }
-//    public static void main(String[] args) {
-//
-//    }
-
-
     public static void main(String[] args) {
-        Developer mark = new Developer("Mark", 2, "2", 20000);
-        Manager sofi = new Manager("Sofi", 1, "4", 6000);
-        Tester ben = new Tester("Ben", 0, "0", 1000);
+        Person truePerson = new Person("Olha", 38, 12000);
+        Person badPerson = new Person("Mazai", 19, -10);
+        Person splinter = new Person("Marina", 29, 0);
+
+        FriendshipService service = new FriendshipService();
+        service.addNewFriend("Kateryna", splinter);
+        service.muteFriend("Kateryna", splinter);
+        System.out.println(splinter);
     }
+
+//    public static void main(String[] args) {
+//        Developer mark = new Developer("Mark", 2, "2", 20000);
+//        Manager sofi = new Manager("Sofi", 1, "4", 6000);
+//        Tester ben = new Tester("Ben", 0, "0", 1000);
+//    }
+
+
 
 }

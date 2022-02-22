@@ -1,6 +1,4 @@
-package learning;
-
-import java.util.Locale;
+package learning.basic;
 
 public class TypeString {
     public static void main(String[] args) {

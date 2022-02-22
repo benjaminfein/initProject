@@ -1,4 +1,4 @@
-package learning;
+package learning.basic;
 
 public class Print {
     public static void main(String[] args) {

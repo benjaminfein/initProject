@@ -1,9 +1,9 @@
-package learning;
+package learning.inheritance;
 
-public class Manager extends Employee{
+public class Developer extends Employee {
 
-    public Manager(String name, int experience, String speedDev, int salary) {
-        super(name, experience, speedDev, salary);
+    public Developer(String name, int experience, String speedDev, int salary) {
+            super(name, experience, speedDev, salary);
     }
 
     public String work(int experience, int salary){
@@ -20,3 +20,4 @@ public class Manager extends Employee{
         return String.valueOf(experience) + " is too low experience to do this work as fast as you want";
     }
 }
+

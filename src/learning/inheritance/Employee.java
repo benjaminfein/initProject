@@ -1,4 +1,4 @@
-package learning;
+package learning.inheritance;
 
 public class Employee {
     private String name;
