@@ -2,7 +2,7 @@ package learning;
 
 import java.util.Scanner;
 
-public class whileCycle {
+public class WhileCycle {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("Please, enter your name : ");

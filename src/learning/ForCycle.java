@@ -2,7 +2,7 @@ package learning;
 
 import java.util.Scanner;
 
-public class forCycle {
+public class ForCycle {
     public static void main(String[] args) {
         Scanner console = new Scanner(System.in);
         System.out.println("Enter the variable, from which you want to calculate the factorial : ");
