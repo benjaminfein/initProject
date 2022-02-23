@@ -1,7 +1,6 @@
 package learning.friendship;
 
 public class FriendshipService {
-
     public void addNewFriend(String name, Person person) {
         person.getActiveFriends().add(name);
     }

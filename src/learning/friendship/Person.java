@@ -1,11 +1,13 @@
 package learning.friendship;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Person {
     private Set<String> activeFriends;
     private Set<String> ignoredFriends;
+    public ArrayList<String> deals;
     private String character;
     private String name;
     private int age;
@@ -17,6 +19,7 @@ public class Person {
         this.age = age;
         activeFriends = new HashSet<>();
         ignoredFriends = new HashSet<>();
+        deals = new ArrayList<>();
     }
 
     public Person(String name, int age, double balance){
@@ -25,6 +28,7 @@ public class Person {
         this.balance = balance;
         activeFriends = new HashSet<>();
         ignoredFriends = new HashSet<>();
+        deals = new ArrayList<>();
     }
 
     public String checkMood(String mood){
@@ -42,11 +46,16 @@ public class Person {
         return ignoredFriends;
     }
 
+    public ArrayList<String> getDeals() {
+        return deals;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
                 "activeFriends=" + activeFriends +
                 ", ignoredFriends=" + ignoredFriends +
+                ", deals=" + deals +
                 ", character='" + character + '\'' +
                 ", name='" + name + '\'' +
                 ", age=" + age +
