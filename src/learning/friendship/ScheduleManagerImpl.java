@@ -1,21 +1,29 @@
 package learning.friendship;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class ScheduleManagerImpl extends Person {
-    public ScheduleManagerImpl(String name, int age) {
-        super(name, age);
+public class ScheduleManagerImpl implements ScheduleManager {
+    private List<String> deals = new ArrayList<>();
+
+    @Override
+    public void addDeal(String deal) {
+        deals.add(deal);
     }
 
-    void addDeal(String deal, Person person) {
-        person.getDeals().add(deal);
+    @Override
+    public void removeDeal(String deal) {
+        deals.remove(deal);
     }
 
-    void removeDeal(String deal, Person person) {
-        person.getDeals().remove(deal);
+    @Override
+    public String getDeal(String deal) {
+        int index = deals.indexOf(deal);
+        return deals.get(index);
     }
 
-    public ArrayList<String> getDeals() {
+    @Override
+    public List<String> getAllDeals() {
         return deals;
     }
 }

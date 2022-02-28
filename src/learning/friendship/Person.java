@@ -2,19 +2,20 @@ package learning.friendship;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Person {
     private Set<String> activeFriends;
     private Set<String> ignoredFriends;
-    public ArrayList<String> deals;
+    public  List<String> deals;
     private String character;
     private String name;
     private int age;
     private int height;
     private double balance;
 
-    public Person(String name, int age){
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
         activeFriends = new HashSet<>();
@@ -22,7 +23,7 @@ public class Person {
         deals = new ArrayList<>();
     }
 
-    public Person(String name, int age, double balance){
+    public Person(String name, int age, double balance) {
         this.name = name;
         this.age = age;
         this.balance = balance;
@@ -31,8 +32,8 @@ public class Person {
         deals = new ArrayList<>();
     }
 
-    public String checkMood(String mood){
-        if(balance <= 0){
+    public String checkMood(String mood) {
+        if (balance <= 0) {
             return "badMood";
         }
         return mood;
@@ -46,7 +47,7 @@ public class Person {
         return ignoredFriends;
     }
 
-    public ArrayList<String> getDeals() {
+    public List<String> getDeals() {
         return deals;
     }
 

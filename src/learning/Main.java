@@ -2,6 +2,8 @@ package learning;
 
 import learning.friendship.FriendshipService;
 import learning.friendship.Person;
+import learning.friendship.ScheduleManager;
+import learning.friendship.ScheduleManagerImpl;
 import learning.inheritance.Developer;
 import learning.inheritance.Manager;
 import learning.inheritance.Tester;
@@ -31,6 +33,15 @@ public class Main {
         service.addNewFriend("Kateryna", splinter);
         service.muteFriend("Kateryna", splinter);
         System.out.println(splinter);
+
+        ScheduleManager scheduleManager = new ScheduleManagerImpl();
+        String deal = "Learn Collections";
+        String deal2 = "Learn modification";
+        scheduleManager.addDeal(deal);
+        scheduleManager.addDeal(deal2);
+        System.out.println(scheduleManager.getDeal(deal));
+        scheduleManager.removeDeal(deal);
+        System.out.println(scheduleManager.getAllDeals());
     }
 
 //    public static void main(String[] args) {

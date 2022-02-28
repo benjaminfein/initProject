@@ -1,10 +1,10 @@
 package learning.friendship;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public interface ScheduleManager {
     void addDeal(String deal);
     void removeDeal(String deal);
     String getDeal(String deal);
-    ArrayList<String> getAllDeals();
+    List<String> getAllDeals();
 }
