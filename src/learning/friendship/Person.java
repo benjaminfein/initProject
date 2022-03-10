@@ -1,11 +1,8 @@
 package learning.friendship;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
-public class Person {
+public class Person implements Comparable<Person>{
     private Set<String> activeFriends;
     private Set<String> ignoredFriends;
     public  List<String> deals;
@@ -63,6 +60,11 @@ public class Person {
                 ", height=" + height +
                 ", balance=" + balance +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Person anotherPerson) {
+        return this.name.compareTo(anotherPerson.name);
     }
 }
 
